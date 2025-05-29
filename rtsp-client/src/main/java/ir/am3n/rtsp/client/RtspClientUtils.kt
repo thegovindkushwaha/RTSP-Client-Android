@@ -433,6 +433,7 @@ internal object RtspClientUtils {
                                             else -> {
                                                 Log.w(TAG, "Unknown audio codec \"" + values[0] + "\"")
                                                 track.audioCodec = AUDIO_CODEC_UNKNOWN
+                                                continue
                                             }
                                         }
                                         track.sampleRateHz = values[1].toInt()
